@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/opengl_graphics_engine.dir/src/glad.c.o CMakeFiles/opengl_graphics_engine.dir/src/line.c.o CMakeFiles/opengl_graphics_engine.dir/src/main.c.o CMakeFiles/opengl_graphics_engine.dir/src/vectors.c.o -o opengl_graphics_engine  /usr/lib/libglut.so /usr/lib/libGL.so /usr/local/lib/libglfw3.a -lm 

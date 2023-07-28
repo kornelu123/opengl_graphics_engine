@@ -16,6 +16,9 @@ file(GLOB ALL_SRC
 
 add_executable(opengl_graphics_engine ${ALL_SRC})
 
+find_library(GLUT libglut.so)
+find_library(GL libGL.so)
 find_library(GLFW libglfw3.a)
 
-target_link_libraries(opengl_graphics_engine ${GLFW} m)
+
+target_link_libraries(opengl_graphics_engine ${GLUT} ${GL} ${GLFW}  m)
