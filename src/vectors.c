@@ -6,7 +6,14 @@
 #define INT_MAX 0x7FFFFFFF
 #define INT_MIN 0x80000000
 
-
+line vec_to_line(vector start, vector end , vector offset){
+	line lin;
+  	lin.x[0] = (SCALE_RATIO*start.x + offset.x)/(start.z + offset.z);
+	lin.x[1] = (SCALE_RATIO*end.x + offset.x)/(end.z + offset.z);
+	lin.y[0] = (SCALE_RATIO*start.y + offset.y)/(start.z + offset.z);
+	lin.y[1] = (SCALE_RATIO*end.y + offset.y)/(end.z + offset.z);
+	return lin;
+}
 
 vector rotate(vector vec, uint32_t deg, uint8_t rot_dir){
 	double rad = (deg/1800.0)*M_PI;
@@ -34,31 +41,48 @@ rectangle rot_rect(rectangle rect, uint8_t rot_dir, uint32_t deg){
 }
 
 rectangle create_rect(vector gen , vector pos ){
-	rectangle new_rect ;
-	vector points[8] = {{-gen.x,-gen.y, gen.z},{-gen.x,gen.y,gen.z},{gen.x,-gen.y,gen.z},{gen.x,gen.y,gen.z},{gen.x,-gen.y,-gen.z},{gen.x,gen.y,-gen.z},{-gen.x,-gen.y,-gen.z},{-gen.x,gen.y,-gen.z}};
-	for(int i=0;i<8;i++){
-		new_rect.tri[i].vec[0] = points[i];
-		new_rect.tri[i].vec[1] = points[(i+1) % 8];
-		new_rect.tri[i].vec[2] = points[(i+2) % 8];
-		new_rect.tri[i].vec[3] = points[i];
-	}
-	new_rect.tri[10].vec[0] = points[6];
-	new_rect.tri[10].vec[1] = points[2];
-	new_rect.tri[10].vec[2] = points[4];
-	new_rect.tri[10].vec[3] = points[6];
-	new_rect.tri[11].vec[0] = points[6];
-	new_rect.tri[11].vec[1] = points[2];
-	new_rect.tri[11].vec[2] = points[0];
-	new_rect.tri[11].vec[3] = points[6];
-	new_rect.tri[9].vec[0] = points[7];
-	new_rect.tri[9].vec[1] = points[3];
-	new_rect.tri[9].vec[2] = points[5];
-	new_rect.tri[9].vec[3] = points[7];
-	new_rect.tri[8].vec[0] = points[7];
-	new_rect.tri[8].vec[1] = points[3];
-	new_rect.tri[8].vec[2] = points[1];
-	new_rect.tri[8].vec[3] = points[7];
+	rectangle new_rect ;	
 	new_rect.pos = pos;
+	vector points[8] = {{-gen.x,-gen.y, gen.z},{-gen.x,gen.y,gen.z},{gen.x,-gen.y,gen.z},{gen.x,gen.y,gen.z},{gen.x,-gen.y,-gen.z},{gen.x,gen.y,-gen.z},{-gen.x,-gen.y,-gen.z},{-gen.x,gen.y,-gen.z}};	
+	new_rect.tri[0].vec[0] = points[0];
+	new_rect.tri[0].vec[1] = points[2];
+	new_rect.tri[0].vec[2] = points[3];
+	new_rect.tri[1].vec[0] = points[0];
+	new_rect.tri[1].vec[1] = points[3];
+	new_rect.tri[1].vec[2] = points[1];
+	new_rect.tri[2].vec[0] = points[2];
+	new_rect.tri[2].vec[1] = points[4];
+	new_rect.tri[2].vec[2] = points[5];
+	new_rect.tri[3].vec[0] = points[2];
+	new_rect.tri[3].vec[1] = points[5];
+	new_rect.tri[3].vec[2] = points[3];
+	new_rect.tri[4].vec[0] = points[4];
+	new_rect.tri[4].vec[1] = points[6];
+	new_rect.tri[4].vec[2] = points[7];
+	new_rect.tri[5].vec[0] = points[4];
+	new_rect.tri[5].vec[1] = points[7];
+	new_rect.tri[5].vec[2] = points[5];
+	new_rect.tri[6].vec[0] = points[6];
+	new_rect.tri[6].vec[1] = points[0];
+	new_rect.tri[6].vec[2] = points[1];
+	new_rect.tri[7].vec[0] = points[6];
+	new_rect.tri[7].vec[1] = points[1];
+	new_rect.tri[7].vec[2] = points[7];
+	new_rect.tri[8].vec[0] = points[1];
+	new_rect.tri[8].vec[1] = points[3];
+	new_rect.tri[8].vec[2] = points[5];
+	new_rect.tri[9].vec[0] = points[1];
+	new_rect.tri[9].vec[1] = points[5];
+	new_rect.tri[9].vec[2] = points[7];
+	new_rect.tri[10].vec[0] = points[2];
+	new_rect.tri[10].vec[1] = points[6];
+	new_rect.tri[10].vec[2] = points[4];
+	new_rect.tri[11].vec[0] = points[2];
+	new_rect.tri[11].vec[1] = points[0];
+	new_rect.tri[11].vec[2] = points[6];
+	for(int i=0;i<12;i++){
+		new_rect.tri[i].vec[3] = new_rect.tri[i].vec[0];
+	}
 	return new_rect;
 }
 
@@ -69,8 +93,15 @@ void draw_cuboid(rectangle rect){
 }
 
 void draw_triangle(triangle tri, vector offset){
+	line lin[3];
+	int det;
 	for(int i=0;i<3;i++){
-		draw_vec(tri.vec[i],tri.vec[i+1],offset);
+		lin[i] = vec_to_line(tri.vec[i],tri.vec[i+1],offset);
+	}
+	det = lin[0].x[0]*(lin[1].y[0] - lin[2].y[0]) + lin[1].x[0]*(lin[2].y[0] - lin[0].y[0]) + lin[2].x[0]*(lin[0].y[0] - lin[1].y[0]);
+	if(det > 0)return;
+	for(int i=0;i<3;i++){
+		draw_line(lin[i]);
 	}
 }
 

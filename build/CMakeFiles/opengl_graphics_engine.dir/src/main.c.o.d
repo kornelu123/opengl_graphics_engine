@@ -1,8 +1,9 @@
 CMakeFiles/opengl_graphics_engine.dir/src/main.c.o: \
- /home/j00r/opengl_graphics_engine/src/main.c /usr/include/stdc-predef.h \
- /usr/include/GL/glut.h /usr/include/GL/freeglut_std.h \
- /usr/include/GL/gl.h /usr/include/GL/glext.h \
- /home/j00r/opengl_graphics_engine/inc/KHR/khrplatform.h \
+ /home/j00r/my_proj/opengl_graphics_engine/src/main.c \
+ /usr/include/stdc-predef.h /usr/include/GL/glut.h \
+ /usr/include/GL/freeglut_std.h /usr/include/GL/gl.h \
+ /usr/include/GL/glext.h \
+ /home/j00r/my_proj/opengl_graphics_engine/inc/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -30,8 +31,9 @@ CMakeFiles/opengl_graphics_engine.dir/src/main.c.o: \
  /usr/include/bits/atomic_wide_counter.h /usr/include/bits/struct_mutex.h \
  /usr/include/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/bits/stdlib-float.h \
- /home/j00r/opengl_graphics_engine/inc/line.h \
- /home/j00r/opengl_graphics_engine/inc/vectors.h \
+ /home/j00r/my_proj/opengl_graphics_engine/inc/line.h \
+ /usr/local/include/GLFW/glfw3.h \
+ /home/j00r/my_proj/opengl_graphics_engine/inc/vectors.h \
  /usr/local/include/xcb/xcb.h /usr/include/sys/uio.h \
  /usr/include/bits/types/struct_iovec.h /usr/include/bits/uio_lim.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/bits/sched.h \
@@ -45,9 +47,8 @@ CMakeFiles/opengl_graphics_engine.dir/src/main.c.o: \
  /usr/include/bits/pthread_stack_min-dynamic.h \
  /usr/include/bits/pthread_stack_min.h /usr/local/include/xcb/xproto.h \
  /usr/local/include/xcb/xcb.h \
- /home/j00r/opengl_graphics_engine/inc/line.h \
- /usr/local/include/GLFW/glfw3.h \
- /home/j00r/opengl_graphics_engine/inc/vectors.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
- /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
- /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h
+ /home/j00r/my_proj/opengl_graphics_engine/inc/line.h \
+ /usr/include/unistd.h /usr/include/bits/posix_opt.h \
+ /usr/include/bits/environments.h /usr/include/bits/confname.h \
+ /usr/include/bits/getopt_posix.h /usr/include/bits/getopt_core.h \
+ /usr/include/bits/unistd_ext.h

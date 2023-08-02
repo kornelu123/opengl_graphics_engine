@@ -4,15 +4,15 @@
 #include "vectors.h"
 #include <unistd.h>
 
-vector gen    = {100,100, 100};
-vector offset = {0,0,400};
+vector gen    = {60,200, 40};
+vector offset = {100,40,400};
 int count=0;
 
 void renderScene() {
 	
 	rectangle rect = create_rect(gen, offset);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	rect = rot_rect(rect,ROT_X | ROT_Z , count);
+	rect = rot_rect(rect,ROT_X | ROT_Z |ROT_Y, count);
 	glBegin(GL_POINTS);
 		draw_cuboid(rect);
 		dump_buffer();	

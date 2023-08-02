@@ -12,40 +12,32 @@ int start_x = -WIDTH/2;
 int start_y = -HEIGHT/2;
 
 
-void draw_line(int x1, int y1, int x2, int y2){
+void draw_line(line lin){
 	int deltax, deltay, g, h, c;
-	deltax = x2 - x1;
+	deltax = lin.x[1] - lin.x[0];
 	if(deltax > 0)g = 1;else g = -1;
 	deltax = abs(deltax);	
-	deltay = y2 - y1;
+	deltay = lin.y[1] - lin.y[0];
 	if(deltay > 0) h = 1;else h = -1;
 	deltay = abs(deltay);
 	if ( deltax > deltay ) {
     	c = -deltax;
-    	while ( x1 != x2 ) {
-      		set_pixel ( x1, y1 );
+    	while ( lin.x[0] != lin.x[1] ) {
+      		set_pixel ( lin.x[0], lin.y[0] );
       		c += 2*deltay;
-      		if ( c > 0 ) { y1 += h; c -= 2*deltax; }
-      		x1 += g;
+      		if ( c > 0 ) { lin.y[0] += h; c -= 2*deltax; }
+      		lin.x[0] += g;
     		}
   	}else {
     		c = -deltay;
-   		while ( y1 != y2 ) {
-      		set_pixel ( x1, y1 );
+   		while ( lin.y[0] != lin.y[1] ) {
+      		set_pixel ( lin.x[0], lin.y[0] );
       		c += 2*deltax;
-      		if ( c > 0 ) { x1 += g; c -= 2*deltay; }
-  	    	y1 += h;
+      		if ( c > 0 ) { lin.x[0] += g; c -= 2*deltay; }
+  	    	lin.y[0] += h;
     		}
   	}
 }
-
-void draw_vec(vector start, vector end, vector offset){
-	int x1, x2, y1, y2; x1 = (SCALE_RATIO*start.x + offset.x)/(start.z + offset.z);
-	x2 = (SCALE_RATIO*end.x + offset.x)/(end.z + offset.z);
-	y1 = (SCALE_RATIO*start.y + offset.y)/(start.z + offset.z);
-	y2 = (SCALE_RATIO*end.y + offset.y)/(end.z + offset.z);
-	draw_line(x1,y1,x2,y2);
-}	
 
 void set_pixel(int x, int y){
 	buff[x + end_x][y + end_y] = 1;

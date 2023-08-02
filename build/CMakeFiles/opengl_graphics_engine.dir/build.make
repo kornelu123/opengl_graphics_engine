@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/j00r/opengl_graphics_engine
+CMAKE_SOURCE_DIR = /home/j00r/my_proj/opengl_graphics_engine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/j00r/opengl_graphics_engine/build
+CMAKE_BINARY_DIR = /home/j00r/my_proj/opengl_graphics_engine/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/opengl_graphics_engine.dir/depend.make
@@ -70,60 +70,60 @@ include CMakeFiles/opengl_graphics_engine.dir/progress.make
 include CMakeFiles/opengl_graphics_engine.dir/flags.make
 
 CMakeFiles/opengl_graphics_engine.dir/src/glad.c.o: CMakeFiles/opengl_graphics_engine.dir/flags.make
-CMakeFiles/opengl_graphics_engine.dir/src/glad.c.o: /home/j00r/opengl_graphics_engine/src/glad.c
+CMakeFiles/opengl_graphics_engine.dir/src/glad.c.o: /home/j00r/my_proj/opengl_graphics_engine/src/glad.c
 CMakeFiles/opengl_graphics_engine.dir/src/glad.c.o: CMakeFiles/opengl_graphics_engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/j00r/opengl_graphics_engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/opengl_graphics_engine.dir/src/glad.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/opengl_graphics_engine.dir/src/glad.c.o -MF CMakeFiles/opengl_graphics_engine.dir/src/glad.c.o.d -o CMakeFiles/opengl_graphics_engine.dir/src/glad.c.o -c /home/j00r/opengl_graphics_engine/src/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/j00r/my_proj/opengl_graphics_engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/opengl_graphics_engine.dir/src/glad.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/opengl_graphics_engine.dir/src/glad.c.o -MF CMakeFiles/opengl_graphics_engine.dir/src/glad.c.o.d -o CMakeFiles/opengl_graphics_engine.dir/src/glad.c.o -c /home/j00r/my_proj/opengl_graphics_engine/src/glad.c
 
 CMakeFiles/opengl_graphics_engine.dir/src/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/opengl_graphics_engine.dir/src/glad.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/j00r/opengl_graphics_engine/src/glad.c > CMakeFiles/opengl_graphics_engine.dir/src/glad.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/j00r/my_proj/opengl_graphics_engine/src/glad.c > CMakeFiles/opengl_graphics_engine.dir/src/glad.c.i
 
 CMakeFiles/opengl_graphics_engine.dir/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/opengl_graphics_engine.dir/src/glad.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/j00r/opengl_graphics_engine/src/glad.c -o CMakeFiles/opengl_graphics_engine.dir/src/glad.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/j00r/my_proj/opengl_graphics_engine/src/glad.c -o CMakeFiles/opengl_graphics_engine.dir/src/glad.c.s
 
 CMakeFiles/opengl_graphics_engine.dir/src/line.c.o: CMakeFiles/opengl_graphics_engine.dir/flags.make
-CMakeFiles/opengl_graphics_engine.dir/src/line.c.o: /home/j00r/opengl_graphics_engine/src/line.c
+CMakeFiles/opengl_graphics_engine.dir/src/line.c.o: /home/j00r/my_proj/opengl_graphics_engine/src/line.c
 CMakeFiles/opengl_graphics_engine.dir/src/line.c.o: CMakeFiles/opengl_graphics_engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/j00r/opengl_graphics_engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/opengl_graphics_engine.dir/src/line.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/opengl_graphics_engine.dir/src/line.c.o -MF CMakeFiles/opengl_graphics_engine.dir/src/line.c.o.d -o CMakeFiles/opengl_graphics_engine.dir/src/line.c.o -c /home/j00r/opengl_graphics_engine/src/line.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/j00r/my_proj/opengl_graphics_engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/opengl_graphics_engine.dir/src/line.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/opengl_graphics_engine.dir/src/line.c.o -MF CMakeFiles/opengl_graphics_engine.dir/src/line.c.o.d -o CMakeFiles/opengl_graphics_engine.dir/src/line.c.o -c /home/j00r/my_proj/opengl_graphics_engine/src/line.c
 
 CMakeFiles/opengl_graphics_engine.dir/src/line.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/opengl_graphics_engine.dir/src/line.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/j00r/opengl_graphics_engine/src/line.c > CMakeFiles/opengl_graphics_engine.dir/src/line.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/j00r/my_proj/opengl_graphics_engine/src/line.c > CMakeFiles/opengl_graphics_engine.dir/src/line.c.i
 
 CMakeFiles/opengl_graphics_engine.dir/src/line.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/opengl_graphics_engine.dir/src/line.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/j00r/opengl_graphics_engine/src/line.c -o CMakeFiles/opengl_graphics_engine.dir/src/line.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/j00r/my_proj/opengl_graphics_engine/src/line.c -o CMakeFiles/opengl_graphics_engine.dir/src/line.c.s
 
 CMakeFiles/opengl_graphics_engine.dir/src/main.c.o: CMakeFiles/opengl_graphics_engine.dir/flags.make
-CMakeFiles/opengl_graphics_engine.dir/src/main.c.o: /home/j00r/opengl_graphics_engine/src/main.c
+CMakeFiles/opengl_graphics_engine.dir/src/main.c.o: /home/j00r/my_proj/opengl_graphics_engine/src/main.c
 CMakeFiles/opengl_graphics_engine.dir/src/main.c.o: CMakeFiles/opengl_graphics_engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/j00r/opengl_graphics_engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/opengl_graphics_engine.dir/src/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/opengl_graphics_engine.dir/src/main.c.o -MF CMakeFiles/opengl_graphics_engine.dir/src/main.c.o.d -o CMakeFiles/opengl_graphics_engine.dir/src/main.c.o -c /home/j00r/opengl_graphics_engine/src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/j00r/my_proj/opengl_graphics_engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/opengl_graphics_engine.dir/src/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/opengl_graphics_engine.dir/src/main.c.o -MF CMakeFiles/opengl_graphics_engine.dir/src/main.c.o.d -o CMakeFiles/opengl_graphics_engine.dir/src/main.c.o -c /home/j00r/my_proj/opengl_graphics_engine/src/main.c
 
 CMakeFiles/opengl_graphics_engine.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/opengl_graphics_engine.dir/src/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/j00r/opengl_graphics_engine/src/main.c > CMakeFiles/opengl_graphics_engine.dir/src/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/j00r/my_proj/opengl_graphics_engine/src/main.c > CMakeFiles/opengl_graphics_engine.dir/src/main.c.i
 
 CMakeFiles/opengl_graphics_engine.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/opengl_graphics_engine.dir/src/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/j00r/opengl_graphics_engine/src/main.c -o CMakeFiles/opengl_graphics_engine.dir/src/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/j00r/my_proj/opengl_graphics_engine/src/main.c -o CMakeFiles/opengl_graphics_engine.dir/src/main.c.s
 
 CMakeFiles/opengl_graphics_engine.dir/src/vectors.c.o: CMakeFiles/opengl_graphics_engine.dir/flags.make
-CMakeFiles/opengl_graphics_engine.dir/src/vectors.c.o: /home/j00r/opengl_graphics_engine/src/vectors.c
+CMakeFiles/opengl_graphics_engine.dir/src/vectors.c.o: /home/j00r/my_proj/opengl_graphics_engine/src/vectors.c
 CMakeFiles/opengl_graphics_engine.dir/src/vectors.c.o: CMakeFiles/opengl_graphics_engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/j00r/opengl_graphics_engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/opengl_graphics_engine.dir/src/vectors.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/opengl_graphics_engine.dir/src/vectors.c.o -MF CMakeFiles/opengl_graphics_engine.dir/src/vectors.c.o.d -o CMakeFiles/opengl_graphics_engine.dir/src/vectors.c.o -c /home/j00r/opengl_graphics_engine/src/vectors.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/j00r/my_proj/opengl_graphics_engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/opengl_graphics_engine.dir/src/vectors.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/opengl_graphics_engine.dir/src/vectors.c.o -MF CMakeFiles/opengl_graphics_engine.dir/src/vectors.c.o.d -o CMakeFiles/opengl_graphics_engine.dir/src/vectors.c.o -c /home/j00r/my_proj/opengl_graphics_engine/src/vectors.c
 
 CMakeFiles/opengl_graphics_engine.dir/src/vectors.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/opengl_graphics_engine.dir/src/vectors.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/j00r/opengl_graphics_engine/src/vectors.c > CMakeFiles/opengl_graphics_engine.dir/src/vectors.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/j00r/my_proj/opengl_graphics_engine/src/vectors.c > CMakeFiles/opengl_graphics_engine.dir/src/vectors.c.i
 
 CMakeFiles/opengl_graphics_engine.dir/src/vectors.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/opengl_graphics_engine.dir/src/vectors.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/j00r/opengl_graphics_engine/src/vectors.c -o CMakeFiles/opengl_graphics_engine.dir/src/vectors.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/j00r/my_proj/opengl_graphics_engine/src/vectors.c -o CMakeFiles/opengl_graphics_engine.dir/src/vectors.c.s
 
 # Object files for target opengl_graphics_engine
 opengl_graphics_engine_OBJECTS = \
@@ -144,7 +144,7 @@ opengl_graphics_engine: /usr/lib/libglut.so
 opengl_graphics_engine: /usr/lib/libGL.so
 opengl_graphics_engine: /usr/local/lib/libglfw3.a
 opengl_graphics_engine: CMakeFiles/opengl_graphics_engine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/j00r/opengl_graphics_engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable opengl_graphics_engine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/j00r/my_proj/opengl_graphics_engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable opengl_graphics_engine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opengl_graphics_engine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -156,6 +156,6 @@ CMakeFiles/opengl_graphics_engine.dir/clean:
 .PHONY : CMakeFiles/opengl_graphics_engine.dir/clean
 
 CMakeFiles/opengl_graphics_engine.dir/depend:
-	cd /home/j00r/opengl_graphics_engine/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/j00r/opengl_graphics_engine /home/j00r/opengl_graphics_engine /home/j00r/opengl_graphics_engine/build /home/j00r/opengl_graphics_engine/build /home/j00r/opengl_graphics_engine/build/CMakeFiles/opengl_graphics_engine.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/j00r/my_proj/opengl_graphics_engine/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/j00r/my_proj/opengl_graphics_engine /home/j00r/my_proj/opengl_graphics_engine /home/j00r/my_proj/opengl_graphics_engine/build /home/j00r/my_proj/opengl_graphics_engine/build /home/j00r/my_proj/opengl_graphics_engine/build/CMakeFiles/opengl_graphics_engine.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/opengl_graphics_engine.dir/depend
 

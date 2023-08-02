@@ -1,7 +1,7 @@
 CMakeFiles/opengl_graphics_engine.dir/src/vectors.c.o: \
- /home/j00r/opengl_graphics_engine/src/vectors.c \
+ /home/j00r/my_proj/opengl_graphics_engine/src/vectors.c \
  /usr/include/stdc-predef.h \
- /home/j00r/opengl_graphics_engine/inc/vectors.h \
+ /home/j00r/my_proj/opengl_graphics_engine/inc/vectors.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -38,12 +38,11 @@ CMakeFiles/opengl_graphics_engine.dir/src/vectors.c.o: \
  /usr/include/bits/pthread_stack_min-dynamic.h \
  /usr/include/bits/pthread_stack_min.h /usr/local/include/xcb/xproto.h \
  /usr/local/include/xcb/xcb.h \
- /home/j00r/opengl_graphics_engine/inc/line.h \
- /home/j00r/opengl_graphics_engine/inc/vectors.h /usr/include/math.h \
+ /home/j00r/my_proj/opengl_graphics_engine/inc/line.h /usr/include/math.h \
  /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
  /usr/include/bits/floatn.h /usr/include/bits/floatn-common.h \
  /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
  /usr/include/bits/fp-fast.h \
  /usr/include/bits/mathcalls-helper-functions.h \
  /usr/include/bits/mathcalls.h \
- /home/j00r/opengl_graphics_engine/inc/line.h
+ /home/j00r/my_proj/opengl_graphics_engine/inc/line.h

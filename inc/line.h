@@ -4,12 +4,12 @@
 #define HEIGHT 768 
 #define WIDTH 1366 
 
-#include "vectors.h"
-void draw_vec(vector start, vector end, vector offset);
+typedef struct{
+	int x[2];
+	int y[2];
+}line;
 
-void draw_vec(vector start, vector end, vector offset);
-
-void draw_line(int x1, int y1, int x2, int y2);
+void draw_line(line lin);
 
 void set_pixel(int x, int y);
 

@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/j00r/opengl_graphics_engine/inc -I/home/j00r/opengl_graphics_engine/src
+C_INCLUDES = -I/home/j00r/my_proj/opengl_graphics_engine/inc -I/home/j00r/my_proj/opengl_graphics_engine/src
 
 C_FLAGS = 
 

@@ -28,6 +28,7 @@ rectangle rot_rect(rectangle rect, uint8_t rot_dir, uint32_t deg);
 
 vector rotate(vector vec, uint32_t deg, uint8_t rot_dir);
 
+line vec_to_line(vector start, vector end , vector offset);
 
 void draw_cuboid(rectangle rect);
 

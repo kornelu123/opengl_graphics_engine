@@ -1,10 +1,11 @@
 CMakeFiles/opengl_graphics_engine.dir/src/glad.c.o: \
- /home/j00r/opengl_graphics_engine/src/glad.c /usr/include/stdc-predef.h \
- /usr/include/stdio.h /usr/include/bits/libc-header-start.h \
- /usr/include/features.h /usr/include/features-time64.h \
- /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \
- /usr/include/sys/cdefs.h /usr/include/bits/long-double.h \
- /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+ /home/j00r/my_proj/opengl_graphics_engine/src/glad.c \
+ /usr/include/stdc-predef.h /usr/include/stdio.h \
+ /usr/include/bits/libc-header-start.h /usr/include/features.h \
+ /usr/include/features-time64.h /usr/include/bits/wordsize.h \
+ /usr/include/bits/timesize.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/long-double.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include/stddef.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include/stdarg.h \
  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
@@ -31,8 +32,9 @@ CMakeFiles/opengl_graphics_engine.dir/src/glad.c.o: \
  /usr/include/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/bits/stdlib-float.h /usr/include/string.h \
  /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
- /usr/include/strings.h /home/j00r/opengl_graphics_engine/inc/glad/glad.h \
- /home/j00r/opengl_graphics_engine/inc/KHR/khrplatform.h \
+ /usr/include/strings.h \
+ /home/j00r/my_proj/opengl_graphics_engine/inc/glad/glad.h \
+ /home/j00r/my_proj/opengl_graphics_engine/inc/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/13.1.1/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/wchar.h \
  /usr/include/bits/stdint-uintn.h /usr/include/dlfcn.h \
